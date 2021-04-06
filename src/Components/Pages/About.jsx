@@ -8,7 +8,7 @@ function About() {
                 <img src="images/julio.jpg" alt="" className="my-img"/>
             </div>
             <div className="description-container">
-            <h2 className = "about-title">About me</h2>
+            <h2 className = "about-title">Sobre mi</h2>
               <p className="description">I'm a software engineer based in Querétato-México. <br/>
               I help converting ideas and visions into meaningful and useful products.</p>
             </div>
