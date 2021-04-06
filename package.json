@@ -2,11 +2,12 @@
   "name": "personal_portafolio",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://Julsmonjaraz.github.io/Prueba1",
+  "homepage": " https://julsmonjaraz.github.io/Prueba1/",
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.10",
     "@testing-library/react": "^11.2.6",
     "@testing-library/user-event": "^12.8.3",
+    "gh-pages": "^3.1.0",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-icons": "^4.2.0",
@@ -17,7 +18,7 @@
   },
   "scripts": {
     "predeploy": "npm run build",
-    "deploy":"gh-pages -d build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
