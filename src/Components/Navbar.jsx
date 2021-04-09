@@ -14,26 +14,24 @@ function Navbar() {
                 
 
                 <ul className="navbar-menu">
+
+                 <li className = "nav-item">
+                        <Link  isDynamic = {true} activeClass="nav-selected" to="home" spy={true} smooth={true} offset={0} duration={500}className="nav-links">
+                              Home
+                        </Link>
+                    </li>   
  
                 <li className = "nav-item">
-                        <Link activeClass="active" to="proyects" spy={true} smooth={true} offset={-50} duration={1000} className="nav-links">
+                        <Link isDynamic = {true} activeClass="nav-selected" to="proyects" spy={true} smooth={true} offset={0} duration={500} className="nav-links">
                               My work
                         </Link>
                     </li>
                     
                     <li className = "nav-item">
-                        <Link activeClass="active" to="about" spy={true} smooth={true} offset={-80} duration={1000} className="nav-links">
+                        <Link  isDynamic = {true} activeClass="nav-selected" to="about" spy={true} smooth={true} offset={0} duration={1000} className="nav-links">
                               About me
                         </Link>
                     </li>
-
-                    <li className = "nav-item">
-                        <Link  activeClass="active" to="" spy={true} smooth={true} offset={0} duration={500}className="nav-links">
-                              Contact me
-                        </Link>
-                    </li>
-
-                    
 
                 </ul>
             </div>

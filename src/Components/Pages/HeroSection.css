@@ -1,33 +1,37 @@
  .hero-container {
-     height: 100vh;
      background: url('../resources/nature-bg.jpg');
      background-size:cover;
      display: flex;
      flex-flow: column nowrap;
-     color: white;
+     color: #ffffff;
+     align-content: center;
+     justify-content: flex-end;
+     height: 100vh;
+     width: 100vw;
  }
 
  .content {
-     padding-top:15rem;
-     align-self: center;
-     justify-self: center;
      display: flex;
      flex-flow: column nowrap;
      align-items: center;
+     justify-items:center;
+     margin-bottom: 5rem ;
  }
 
  .content h1 {
+     align-self: center;
      font-size: 5rem;
      letter-spacing: 2px;
      opacity: .9;
+     color: #f7f3e9;
  }
 
  .content p {
-     color: white;
+     justify-self: center;
+     color: #CED0E2;
      font-size: 3rem;
      margin-bottom: 30px;
      letter-spacing: 2px;
-     align-self: flex-start;
      opacity: .8;
  }
 
@@ -38,9 +42,9 @@
  .social-media {
      display: flex;
      justify-content: center;
+     align-items: center;
      margin-top: 25px;
      text-align: center;
-     margin-top: 2rem;
  }
 
 .social-icon {
@@ -61,6 +65,44 @@
 
 .social-media a {
    color: white;
+ }
+
+ @media  screen and (max-width:740px) {
+    .content h1 {
+        align-self: center;
+        font-size: 4rem;
+        letter-spacing: 2px;
+        opacity: .9;
+        color: #f7f3e9;
+    }
+   
+    .content p {
+        justify-self: center;
+        color: #CED0E2;
+        font-size: 2rem;
+        margin-bottom: 30px;
+        letter-spacing: 2px;
+        opacity: .8;
+    }
+ }
+
+ @media  screen and (max-width:620px) {
+    .content h1 {
+        align-self: center;
+        font-size: 3rem;
+        letter-spacing: 2px;
+        opacity: .9;
+        color: #f7f3e9;
+    }
+   
+    .content p {
+        justify-self: center;
+        color: #CED0E2;
+        font-size: 2rem;
+        margin-bottom: 30px;
+        letter-spacing: 2px;
+        opacity: .8;
+    }
  }
 
 

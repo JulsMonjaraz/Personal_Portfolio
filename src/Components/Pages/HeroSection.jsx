@@ -21,7 +21,7 @@ function HeroSection() {
       
 
     return (
-        <div className = "hero-container" id = "hero">
+        <div className = "hero-container" id = "home">
          <div className="content">
              <h1>Hi. my name is Julio</h1>
              <p>I'am a software engineer.</p>
@@ -31,8 +31,7 @@ function HeroSection() {
              buttonStyle = {'btn--outline'}
              buttonSize = {'btn--large'}
              />
-         </div>
-         <div className="social-media">
+             <div className="social-media">
              <a  className = "icon-btn">
                 <AiFillGithub 
                 size = {45}
@@ -54,6 +53,7 @@ function HeroSection() {
                 onClick = {() => openInNewTab('https://www.instagram.com/juls_45733/')}/>
              </a>
              
+         </div>
          </div>
         </div>
     )

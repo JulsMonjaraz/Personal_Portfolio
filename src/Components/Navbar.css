@@ -1,13 +1,15 @@
  .navbar {
-    background: linear-gradient(90deg, rgb(28, 27, 27) 0%, rgb(26, 23, 23) 100%); 
+     background: linear-gradient(90deg, rgb(28, 27, 27) 0%, rgb(26, 23, 23) 100%); 
      display: flex;
      justify-content: center;
      align-items: center;
-     font-size: 1.2rem;
-     position: sticky;
+     font-size: .9rem;
+     position: fixed;
      top: 0;
      z-index: 999;
-     height: 80PX;
+     padding: 1.6rem 0;
+     width: 100%;
+     height: 2rem;
  }
 
  .navbar-container {
@@ -35,14 +37,12 @@
 
  .navbar-logo p {
     letter-spacing: 1.5px;
-    font-size: 1.1rem;
-    font-weight: 400;
  }
 
 
  .navbar-img {
-     width: 2.5rem;
-     margin-right: 10px;
+     width: 2rem;
+     margin-right: .6rem;
      color: white;
  }
 
@@ -56,23 +56,25 @@
      justify-items: center;
  }
 
- .navbar-menu a {
+ .nav-links {
+    cursor: pointer;
     text-decoration: none;
-    color: white;
+    color: rgba(255, 255, 255, 0.954);
     margin-right: 20px;
     font-weight: 450;
-    opacity: .75;
-    transition: .2s ease-in-out;
+    transition: .2s;
+    opacity: .8;
 }
 
-.navbar-menu a:hover {
-    font-size: 1.2rem;
-    text-decoration: none;
+.nav-links:hover {
     opacity: 1;
-    margin-right: 20px;
+    color: white;
+    
 }
 
-.nav-links {
-    cursor: pointer;
+.nav-selected { 
+    opacity: 1;
+    font-weight: bold;
+    color:#ffff;
 }
 
