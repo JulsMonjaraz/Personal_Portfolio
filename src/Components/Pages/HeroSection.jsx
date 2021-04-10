@@ -1,4 +1,4 @@
-import React,{useState} from 'react'
+import React,{useState,useEffect} from 'react'
 import { Link } from "react-router-dom";
 import { Button } from '../Button';
 import './HeroSection.css'
@@ -12,7 +12,11 @@ import {AiFillInstagram} from 'react-icons/ai';
 
 function HeroSection() {
 
-  
+  useEffect(() => {
+    showButton()
+    console.log('running');
+  }, [])
+
   const [button, setButton] = useState(false);
 
   const showButton = ()=>{
