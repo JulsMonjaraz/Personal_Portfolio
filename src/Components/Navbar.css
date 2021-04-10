@@ -8,7 +8,7 @@
      top: 0;
      z-index: 999;
      padding: 1.6rem 0;
-     height: 50px;
+     height: 60px;
      width: 100%;
  }
 
@@ -18,7 +18,7 @@
      justify-content: center;
      align-items: center;
      justify-content: space-between;
-     height: 2rem;
+     height: 60px;
  }
 
  .container {
@@ -39,6 +39,7 @@
     align-items: center;
     justify-self: start;
     text-decoration: none;
+    cursor: pointer;
  }
 
  .navbar-img {
@@ -145,8 +146,6 @@
 }
 
 @media  screen and (max-width:430px) {
-    .navbar-logo {
-        display: none;
-    }
+  
  }
 

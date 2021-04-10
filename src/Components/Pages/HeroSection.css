@@ -1,5 +1,5 @@
  .hero-container {
-     background: url('../resources/ocean-bg.jpg');
+     background: url('../resources/space-bg.jpg');
      background-size:cover;
      background-attachment: fixed;
      display: flex;
@@ -23,17 +23,17 @@
      align-self: center;
      font-size: 4rem;
      letter-spacing: 2px;
-     opacity: .9;
      color: #f7f3e9;
      padding-bottom: .5rem;
  }
 
  .content p {
      justify-self: center;
-     color: #CED0E2;
+     color:silver;
      font-size: 1.5rem;
      padding-bottom: 2rem;
      letter-spacing: 2px;
+     font-weight: 500;
  }
 
 
@@ -129,7 +129,7 @@
     }
 
     .hero-container {
-        background-attachment: scroll;
+     background-attachment: scroll;
     }
  }
 

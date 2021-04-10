@@ -15,6 +15,7 @@ footer {
 }
 
 .footer-text-container {
+    font-size: .9em;
     display: flex;
     flex-flow: column nowrap;
     align-items: center;
