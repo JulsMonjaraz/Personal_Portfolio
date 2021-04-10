@@ -12,6 +12,20 @@ import {AiFillInstagram} from 'react-icons/ai';
 
 function HeroSection() {
 
+  
+  const [button, setButton] = useState(false);
+
+  const showButton = ()=>{
+        if (window.innerWidth < 470) {
+            setButton(true);      
+        }
+        else{
+            setButton(false);
+        }
+
+    }
+
+    window.addEventListener('resize',showButton)
     
     const openInNewTab = (url) => {
         const newWindow = window.open(url, '_blank', 'noopener,noreferrer')
@@ -25,30 +39,43 @@ function HeroSection() {
          <div className="content">
              <h1>Hi. my name is Julio</h1>
              <p>I'am a software engineer.</p>
-             <Button 
-             classN = "hero__btn"
-             children = "Let's talk"
-             buttonStyle = {'btn--outline'}
-             buttonSize = {'btn--large'}
-             />
+             {
+               button 
+               ? 
+               (
+                <Button 
+                classN = "hero__btn"
+                children = "Let's talk"
+                buttonStyle = {'btn--outline'}
+                buttonSize = {'btn--medium'}
+                />
+               )
+               :
+               (
+                <Button 
+                classN = "hero__btn"
+                children = "Let's talk"
+                buttonStyle = {'btn--outline'}
+                buttonSize = {'btn--large'}
+                />
+               )
+             }
+             
              <div className="social-media">
              <a  className = "icon-btn">
                 <AiFillGithub 
-                size = {45}
                 className = "social-icon"
                 onClick = {() => openInNewTab('https://github.com/JulsMonjaraz')}/>
              </a>
              
              <a className = "icon-btn">
                <RiFacebookCircleFill 
-               size = {45}
                className = "social-icon"
                onClick = {() => openInNewTab('https://www.facebook.com/ash.cahu')}/>
              </a>
 
              <a className = "icon-btn">
                <AiFillInstagram 
-                size = {45}
                 className = "social-icon"
                 onClick = {() => openInNewTab('https://www.instagram.com/juls_45733/')}/>
              </a>

@@ -10,7 +10,6 @@ function Home() {
         <> 
           <HeroSection/>
           <Proyects/>
-          <About/>
           <Footer/>
         </>
     )
