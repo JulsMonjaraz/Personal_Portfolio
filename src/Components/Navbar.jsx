@@ -14,8 +14,7 @@ function Navbar() {
         <nav className = "navbar">
             <div className="navbar-container container">
                  <Link to = "#" className = "navbar-logo">
-                        <img  className = "navbar-img"  src="images/enzo-white.png"/>
-                        <p>Julio Monjaraz</p>
+                        <img  className = "navbar-img"  src="images/logo-2.png"/>
                  </Link>
 
                   <div className="menu-icon" onClick = {closeMobileMenu}>
