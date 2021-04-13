@@ -52,7 +52,7 @@ function Navbar() {
                     </li>
 
                     <li className = "nav-item">
-                            <img className = "lg-logo"onClick = {() => i18n.changeLanguage("en")} src="images/Usa-logo.png" alt="english"/>
+                            <img className = "lg-logo"onClick = {() => i18n.changeLanguage("en")} src="images/usa-logo.png" alt="english"/>
                     </li>
 
                 </ul>
