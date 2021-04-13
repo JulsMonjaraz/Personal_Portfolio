@@ -3,8 +3,11 @@ import './Contact.css'
 import { Button } from '../Button.jsx'
 import  emailjs  from "emailjs-com";
 import Swal from 'sweetalert2'
+import {useTranslation} from 'react-i18next'
 
 function Contact() {
+
+    const [t] = useTranslation("global")
 
     const sendMail  = (e) => {
         e.preventDefault();
@@ -18,7 +21,7 @@ function Contact() {
        e.target.reset();
        Swal.fire({
         title: 'Mail sended!',
-        text: 'Thank you.',
+        text: 'Wiil be in touch.',
         icon: 'success',
       })   
        
@@ -26,20 +29,20 @@ function Contact() {
 
     return (
         <div className = "form-container" id = "contact">
-               <h3 className = "form-title">Contact me</h3>
+               <h3 className = "form-title">{t("contact.title")}</h3>
                 <form className="inputs-container" onSubmit = {sendMail}>
                     <div className="name-email-container">
-                      <input  placeholder = "Name"type="text" className="form-input" name = "name"/> 
-                      <input placeholder = "E-mail"type="email" className="form-input" name = "email"/> 
-                      <input placeholder = "Phone number" type="text" className="form-input" name = "number"/> 
+                      <input  placeholder = {t("contact.name-ph")} type="text" className="form-input" name = "name"/> 
+                      <input placeholder = {t("contact.email-ph")}type="email" className="form-input" name = "email"/> 
+                      <input placeholder = {t("contact.phone-ph")} type="text" className="form-input" name = "number"/> 
                     </div>
                   
                   <div className="number-msg-container">
-                    <textarea placeholder = "Message" type="text" className="form-area" name = "message"/> 
+                    <textarea placeholder = {t("contact.mssg-ph")} type="text" className="form-area" name = "message"/> 
                   </div>
                 
                  <Button
-                  children = "Send message" 
+                  children = {t("contact.contact-btn")} 
                   buttonSize = "btn--medium"
                   buttonStyle = "btn--outline"
                   classN = "form-btn"

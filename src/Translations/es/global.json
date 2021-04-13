@@ -1,0 +1,36 @@
+{
+    "navbar": {
+      "home": "Inicio",
+      "work": "Mi trabajo",
+      "contact": "Contacto"
+    },
+    "hero": {
+        "title": "Hola. Mi nombre es Julio",
+        "subtitle": "Y soy un ingeniero de software.",
+        "btn-text": "Hablemos"
+    },
+    "work": {
+     "title": "Mi trabajo",
+     "subtitle": "Proyectos",
+     "cd1-title": "Git me",
+     "cd1-stack": "React , CSS 3 , Bootsrap",
+     "cd1-desc": "Aplicación de React para encontrar rapidamente perfiles de githun y presentarlos información útil e intuitiv.",
+     "cd2-title": "William's Pizza web",
+     "cd2-stack": "React , CSS 3 , Bootsrap",
+     "cd2-desc": "Página web informatica para una pizzeria local resultando en más posibles clientes",
+     "cd3-title": "Visualización de algoritmos",
+     "cd3-stack": "React , CSS 3 , Bootsrap",
+     "cd3-desc": "Aplicación web para vizualizar graficamente la eficiencia de diferentes algoritmos",
+     "cd4-title": "Minimalist",
+     "cd4-stack": "React , CSS 3 , Bootsrap",
+     "cd4-desc": " La manera minimalista de seguir tus tareas pendientes y maximizar tu producitividad manteniendo la simplicidad."
+    },
+    "contact": {
+        "title": "Contactame",
+        "name-ph": "Nombre",
+        "email-ph": "E-mail",
+        "phone-ph": "Teléfono",
+        "mssg-ph": "Mensaje",
+        "contact-btn": "Enviar"
+    }
+}

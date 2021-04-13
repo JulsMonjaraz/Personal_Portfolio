@@ -1,11 +1,14 @@
 import React from 'react'
-import { Button } from './Button';
 import './Navbar.css'
 import  {Link} from 'react-scroll'
 import {FaBars,FaTimes} from 'react-icons/fa'
 import { useState } from "react";
+import { useTranslation } from "react-i18next"
+
 
 function Navbar() {
+
+    const [t,i18n] = useTranslation("global")
 
     const [click, setclick] = useState(false);
 
@@ -16,7 +19,7 @@ function Navbar() {
         <nav className = "navbar">
             <div className="navbar-container container">
                  <Link to = "home" className = "navbar-logo"  isDynamic = {true} spy={true} smooth={true} offset={0} duration={600}>
-                        <img  className = "navbar-img"  src="images/logo-2.png"/>
+                        <img  className = "navbar-img"  src="images/logo-2.png" alt = "logo"/>
                  </Link>
 
                   <div className="menu-icon" onClick = {closeMobileMenu}>
@@ -28,20 +31,28 @@ function Navbar() {
 
                  <li className = "nav-item">
                         <Link  onClick = {closeMobileMenu}isDynamic = {true} activeClass="nav-selected" to="home" spy={true} smooth={true} offset={0} duration={500}className="nav-links">
-                              Home
+                              {t("navbar.home")}
                         </Link>
                     </li>   
  
                 <li className = "nav-item">
-                        <Link onClick = {closeMobileMenu} isDynamic = {true} activeClass="nav-selected" to="proyects" spy={true} smooth={true} offset={0} duration={500} className="nav-links">
-                              My work
+                        <Link onClick = {closeMobileMenu} isDynamic = {true} activeClass="nav-selected" to="proyects" spy={true} smooth={true} offset={-30} duration={500} className="nav-links">
+                              {t("navbar.work")}
                         </Link>
                     </li>
                     
                     <li className = "nav-item">
-                        <Link  onClick = {closeMobileMenu} isDynamic = {true} activeClass="nav-selected" to="contact" spy={true} smooth={true} offset={-50} duration={1000} className="nav-links">
-                              Contact
+                        <Link  onClick = {closeMobileMenu} isDynamic = {true} activeClass="nav-selected" to="contact" spy={true} smooth={true} offset={0} duration={1000} className="nav-links">
+                             {t("navbar.contact")}
                         </Link>
+                    </li>
+
+                    <li className = "nav-item">
+                            <img className = "lg-logo"onClick = {() => i18n.changeLanguage("es")} src="images/mex-logo.png" alt="spanih"/>
+                    </li>
+
+                    <li className = "nav-item">
+                            <img className = "lg-logo"onClick = {() => i18n.changeLanguage("en")} src="images/Usa-logo.png" alt="english"/>
                     </li>
 
                 </ul>

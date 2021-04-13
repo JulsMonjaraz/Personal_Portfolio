@@ -1,24 +1,48 @@
 import React from 'react'
 import { Card } from '../Card.jsx'
 import './Proyects.css'
-import {card_1,card_2,card_3,card_4} from './Data/Data'
+
+import {useTranslation} from 'react-i18next'
+
 
 function Proyects() {
+
+    const [t] = useTranslation("global")
+
     return (
         <div className="proyects-container" id = "proyects">
-            <h3 className = "proyects__mywork">My work</h3>
+            <h4 className = "mywork-subtitle">{t("work.title")}</h4>
+            <h3 className = "mywork-title">{t("work.subtitle")}</h3>
+            
             <div className="line">  </div>
             <Card 
-            {...card_1}
+             title = {t("work.cd1-title")}
+             desc = {t("work.cd1-desc")}
+             imgUrl = "images/img-4.svg"
+             imgStart = "start"
+             techStack ={t("work.cd1-stack")}
             />
             <Card 
-            {...card_2}
+            title = {t("work.cd2-title")}
+            desc = {t("work.cd2-desc")}
+            btn_color = "pink--gradient"
+            imgStart = ""
+            techStack ={t("work.cd2-stack")}
             />
             <Card 
-            {...card_3}
+            title = {t("work.cd3-title")}
+            desc = {t("work.cd3-desc")}
+            imgUrl = "images/img-3.svg"
+            btn_color = "green--gradient"
+            imgStart = "start"
+            techStack ={t("work.cd3-stack")}
             />
             <Card 
-            {...card_4}
+           title = {t("work.cd4-title")}
+           desc = {t("work.cd4-desc")}
+           imgUrl = "images/img-4.svg"
+           imgStart = ""
+           techStack ={t("work.cd4-stack")}
             />
         </div>
     )

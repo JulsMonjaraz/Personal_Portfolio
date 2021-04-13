@@ -1,5 +1,5 @@
  .navbar {
-     background: linear-gradient(90deg, rgb(28, 27, 27) 0%, rgb(26, 23, 23) 100%); 
+     background: linear-gradient(90deg, rgb(28, 27, 27) 0%, rgb(26, 23, 23) 100%);
      display: flex;
      justify-content: center;
      align-items: center;
@@ -78,6 +78,12 @@
     opacity: 1;
     font-weight: bold;
     color:#ffff;
+}
+
+.lg-logo {
+    width: 1.6rem;
+    margin-right: .5rem;
+    cursor: pointer;
 }
 
 @media  screen and (max-width: 768px) {

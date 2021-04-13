@@ -1,22 +1,26 @@
 .proyects-container {
-    /*background: rgb(254,254,254);
-    background: linear-gradient(90deg, rgba(254,254,254,1) 0%, rgba(245,247,250,1) 35%, rgba(233,235,241,1) 100%);
-    0EB1D2 -- a
-   */
-    background:  url('../resources/white-bg2.png');
+    /*background: linear-gradient(90deg, rgb(28, 27, 27) 0%, rgb(26, 23, 23) 100%);*/
+    background-color: #ffffff;
+    
     display: flex;
     flex-flow: column nowrap;   
     align-items: center;
     justify-items: center;
 }
 
-.proyects__mywork{
+.mywork-title{
     font-size: 3rem;
     color: #212529;
-    padding-top: 6rem;
-    margin-bottom: 2rem;
-    border-bottom: 2px solid;
-    border-image-source: linear-gradient(45deg,#0294DC,#02EDFE);
-    border-image-slice: 1;
+    /*color: white;*/
+    letter-spacing: 5px;
+    padding-bottom: 4rem;
+}
+
+.mywork-subtitle{
+    letter-spacing: .25rem;
+    padding-top: 2rem;
+    font-size: 1rem;
+    color:#28b5b5;
+    padding-top: 6.5rem;
 }
 

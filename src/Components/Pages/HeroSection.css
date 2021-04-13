@@ -1,5 +1,5 @@
  .hero-container {
-     background: url('../resources/space-bg.jpg');
+     background:  black url('../resources/space-bg.jpg');
      background-size:cover;
      background-attachment: fixed;
      display: flex;

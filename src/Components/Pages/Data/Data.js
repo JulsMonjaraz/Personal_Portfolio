@@ -1,31 +1,39 @@
+
+
+
+
 export const card_1 = {
-    title: "First-card",
-    desc: "Some shitty description",
-    imgUrl: "images/img-1.svg",
+    title: "Git me",
+    desc: "React application to easily find github profiles and present intuitive useful information to the user.",
+    imgUrl: "images/img-4.svg",
     btn_color: "blue--gradient",
-    imgStart: "start"
+    imgStart: "start",
+    techStack:"React , CSS 3 , Bootsrap"
 }
 
 export const card_2 = {
-    title: "Second-card",
-    desc: "Some shitty description",
+    title: "William's pizza website",
+    desc: "Informative webpage for a local Pizza Shop resuting in more physical customer traffic.",
     imgUrl: "images/img-2.svg",
     btn_color: "pink--gradient",
-    imgStart: ""
+    imgStart: "",
+    techStack:"React , CSS 3 , Bootstrap"
 }
 
 export const card_3 = {
-    title: "Third-card",
-    desc: "Some shitty description",
+    title: "Algorithm visualization",
+    desc: "Web App for grapically visualazing efficiency in different algorithms",
     imgUrl: "images/img-3.svg",
     btn_color: "green--gradient",
-    imgStart: "start"
+    imgStart: "start",
+    techStack:"React , CSS 3 , Bootstrap"
 }
 
 export const card_4 = {
-    title: "Fourth-card",
-    desc: "Some shitty description",
+    title: "Minimalist.",
+    desc: "A minimalist way to keep track of your to do's and maximize productivity while kepping it simple.",
     imgUrl: "images/img-4.svg",
     btn_color: "blue--gradient",
-    imgStart: ""
+    imgStart: "",
+    techStack:"React , CSS 3 , Bootstrap"
 }

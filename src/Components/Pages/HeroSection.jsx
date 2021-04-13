@@ -1,16 +1,18 @@
 import React,{useState,useEffect} from 'react'
-import { Link } from "react-router-dom";
 import { Button } from '../Button';
 import './HeroSection.css'
-import Navbar from '../Navbar';
 import {AiFillGithub} from 'react-icons/ai';
 import {RiFacebookCircleFill} from 'react-icons/ri';
 import {AiFillInstagram} from 'react-icons/ai';
+
+import { useTranslation } from "react-i18next"
 
 
 
 
 function HeroSection() {
+
+  const [t] =  useTranslation("global")
 
   useEffect(() => {
     showButton()
@@ -41,15 +43,15 @@ function HeroSection() {
     return (
         <div className = "hero-container" id = "home">
          <div className="content">
-             <h1>Hi. my name is Julio</h1>
-             <p>I'am a software engineer.</p>
+             <h1>{t("hero.title")}</h1>
+             <p>{t("hero.subtitle")}</p>
              {
                button 
                ? 
                (
                 <Button 
                 classN = "hero__btn"
-                children = "Let's talk"
+                children = {t("hero.btn-text")}
                 buttonStyle = {'btn--outline'}
                 buttonSize = {'btn--medium'}
                 />
@@ -58,7 +60,7 @@ function HeroSection() {
                (
                 <Button 
                 classN = "hero__btn"
-                children = "Let's talk"
+                children = {t("hero.btn-text")}
                 buttonStyle = {'btn--outline'}
                 buttonSize = {'btn--large'}
                 />
@@ -66,23 +68,23 @@ function HeroSection() {
              }
              
              <div className="social-media">
-             <a  className = "icon-btn">
+             <span  className = "icon-btn">
                 <AiFillGithub 
                 className = "social-icon"
                 onClick = {() => openInNewTab('https://github.com/JulsMonjaraz')}/>
-             </a>
+             </span>
              
-             <a className = "icon-btn">
+             <span className = "icon-btn">
                <RiFacebookCircleFill 
                className = "social-icon"
                onClick = {() => openInNewTab('https://www.facebook.com/ash.cahu')}/>
-             </a>
+             </span>
 
-             <a className = "icon-btn">
+             <span className = "icon-btn">
                <AiFillInstagram 
                 className = "social-icon"
                 onClick = {() => openInNewTab('https://www.instagram.com/juls_45733/')}/>
-             </a>
+             </span>
              
          </div>
          </div>

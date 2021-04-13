@@ -3,7 +3,7 @@ import './Button.css'
 
 const STYLES = ['btn--primary','btn--outline','btn--grad']
 const SIZEZ = ['btn--medium','btn--large','btn--mobile','btn--small']
-const COLOR = ['primary','blue',, 'green--gradient','blue--gradient','pink--gradient','purple--gradient']
+const COLOR = ['primary','blue', 'green--gradient','blue--gradient','pink--gradient','purple--gradient']
 
 export const Button = ({
      children,

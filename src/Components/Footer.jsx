@@ -20,26 +20,26 @@ function Footer() {
 
             </div>
             <div className="footer-social-media">
-                <a  className = "icon-btn">
+                <span  className = "icon-btn" href = "#">
                  <AiFillGithub 
                   size = {30}
                   className = "social-icon"
                 onClick = {() => openInNewTab('https://github.com/JulsMonjaraz')}/>
-                 </a>
+                 </span>
              
-               <a className = "icon-btn">
+               <span className = "icon-btn" href = "#">
                  <RiFacebookCircleFill 
                  size = {30}
                  className = "social-icon"
                  onClick = {() => openInNewTab('https://www.facebook.com/ash.cahu')}/>
-               </a>
+               </span>
 
-               <a className = "icon-btn">
+               <span className = "icon-btn" href = "#">
                  <AiFillInstagram 
                   size = {30}
                   className = "social-icon"
                   onClick = {() => openInNewTab('https://www.instagram.com/juls_45733/')}/>
-               </a>
+               </span>
             
               </div>
 
