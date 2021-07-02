@@ -30,7 +30,7 @@ function Navbar() {
                 <ul className={click ? "navbar-menu active" : "navbar-menu"}>
 
                  <li className = "nav-item">
-                        <Link  onClick = {closeMobileMenu}isDynamic = {true} activeClass="nav-selected" to="home" spy={true} smooth={true} offset={0} duration={500}className="nav-links">
+                        <Link  onClick = {closeMobileMenu}isDynamic = {true} activeClass="nav-selected" to="home" spy={true} smooth={true} offset={-30} duration={500}className="nav-links">
                               {t("navbar.home")}
                         </Link>
                     </li>   

@@ -3,12 +3,8 @@
 
 
 export const card_1 = {
-    title: "Git me",
-    desc: "React application to easily find github profiles and present intuitive useful information to the user.",
-    imgUrl: "images/img-4.svg",
-    btn_color: "blue--gradient",
-    imgStart: "start",
-    techStack:"React , CSS 3 , Bootsrap"
+    webUrl: "https://git-mee.herokuapp.com",
+    gitUrl: "https://github.com/JulsMonjaraz/Git-me"
 }
 
 export const card_2 = {

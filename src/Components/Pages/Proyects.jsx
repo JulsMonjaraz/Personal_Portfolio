@@ -1,6 +1,11 @@
 import React from 'react'
 import { Card } from '../Card.jsx'
 import './Proyects.css'
+import {card_1} from '../Pages/Data/Cards'
+import { Link } from "react-router-dom";
+import {AiFillGithub} from 'react-icons/ai';
+import {BiWorld} from 'react-icons/bi';
+
 
 import {useTranslation} from 'react-i18next'
 
@@ -15,13 +20,27 @@ function Proyects() {
             <h3 className = "mywork-title">{t("work.subtitle")}</h3>
             
             <div className="line">  </div>
+
+        
+
             <Card 
              title = {t("work.cd1-title")}
              desc = {t("work.cd1-desc")}
-             imgUrl = "images/img-4.svg"
+             imgUrl = "images/Gitme1.png"
              imgStart = "start"
              techStack ={t("work.cd1-stack")}
+             webUrl = "https://git-mee.herokuapp.com"
+             gitUrl = "https://github.com/JulsMonjaraz/Git-me"
             />
+
+            <div className="card-media-container">
+                <BiWorld className = "card-social-icon" title = "Website" />
+                <AiFillGithub className = "card-social-icon" title = "Git-repo"/>
+            </div>
+
+            
+
+            
             <Card 
             title = {t("work.cd2-title")}
             desc = {t("work.cd2-desc")}

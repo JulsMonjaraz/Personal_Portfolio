@@ -52,6 +52,7 @@
     outline: none;
     transition: ease .3;
     font-size: .8rem;
+    border-radius: 10px;
 }
 
 .form-input:focus {
@@ -67,6 +68,11 @@
     padding-top: .5rem;
     outline: none;
     font-size: .8rem;
+    border-radius: 10px;
+}
+
+.form-area:hover {
+    border: 2px solid #28b5b5;
 }
 
 
